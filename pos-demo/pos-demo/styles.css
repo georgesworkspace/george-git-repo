@@ -1,0 +1,124 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid grey;
+  padding: 1rem 0;
+}
+
+.header__wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.header__title {
+  margin: 0;
+  text-align: center;
+}
+
+/* Body */
+.positioning,
+.float {
+  max-width: 920px;
+  padding: 0.625rem;
+  margin-top: 6rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__card {
+  position: relative;
+  max-width: 25rem;
+}
+
+.positioning__img,
+.cards__img {
+  max-width: 100%;
+}
+
+.cards__wrapper {
+  position: absolute;
+  bottom: 7px;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+}
+
+.outer {
+  position: relative;
+  z-index: -1;
+  height: 300px;
+  width: 300px;
+  color: white;
+  background-color: blueviolet;
+}
+
+.inner {
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  z-index: 6;
+  height: 200px;
+  width: 200px;
+  background-color: goldenrod;
+}
+
+dl > div {
+  background: #fff;
+  padding: 24px 0 0 0;
+}
+
+dt {
+  background: #b8c1c8;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  color: #fff;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: sticky;
+  top: 104px;
+}
+
+dd {
+  font: bold 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid #ccc;
+}
+
+
+.float__left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.float__right {
+  float: right;
+  margin-left: 1rem;
+}

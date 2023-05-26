@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning & Float</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">CSS Positioning & Float</h1>
+        <div>(position: fixed; z-index: 1)</div>
+      </div>
+    </header>
+    <section class="positioning">
+      <h2 class="positioning__title">Static</h2>
+      <p class="positioning__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facilis nisi molestiae deleniti, ab maxime labore
+        quas architecto incidunt quibusdam illo officiis. Rem suscipit facilis sapiente laborum adipisci molestias
+        repudiandae!
+      </p>
+      <img class="positioning__img" src="https://picsum.photos/seed/1/900/300" alt="A Random Picture" />
+      <h2 class="positioning__title">Relative & Absolute</h2>
+      <div class="cards">
+        <article class="cards__card">
+          <img class="cards__img" src="https://picsum.photos/seed/1/800" alt="A Random Picture" />
+          <div class="cards__wrapper">
+            <h3 class="cards__title">Card Title</h3>
+            <p class="cards__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </article>
+        <article class="cards__card">
+          <img class="cards__img" src="https://picsum.photos/seed/3/800" alt="A Random Picture" />
+          <div class="cards__wrapper">
+            <h3 class="cards__title">Card Title</h3>
+            <p class="cards__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="outer">
+        z-index: -1
+        <div>(position: relative)</div>
+        <div class="inner">
+          <div>(position: absolute)</div>
+          z-index: 6
+        </div>
+      </div>
+
+      <h2 class="positioning__title">Sticky</h2>
+      <dl>
+        <div>
+          <dt>A</dt>
+          <dd>Andrew W.K.</dd>
+          <dd>Apparat</dd>
+          <dd>Arcade Fire</dd>
+          <dd>At The Drive-In</dd>
+          <dd>Aziz Ansari</dd>
+        </div>
+        <div>
+          <dt>C</dt>
+          <dd>Chromeo</dd>
+          <dd>Common</dd>
+          <dd>Converge</dd>
+          <dd>Crystal Castles</dd>
+          <dd>Cursive</dd>
+        </div>
+        <div>
+          <dt>E</dt>
+          <dd>Explosions In The Sky</dd>
+        </div>
+        <div>
+          <dt>T</dt>
+          <dd>Ted Leo &amp; The Pharmacists</dd>
+          <dd>T-Pain</dd>
+          <dd>Thrice</dd>
+          <dd>TV On The Radio</dd>
+          <dd>Two Gallants</dd>
+        </div>
+      </dl>
+    </section>
+    <section class="float">
+      <h2 class="float__title">Float</h2>
+      <p>
+        <img class="float__left" src="https://picsum.photos/seed/4/100" alt="A Random Picture" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis distinctio, non nobis ex quia, dolorum
+        vero odit doloribus, accusamus nulla eaque. Numquam quasi esse reiciendis adipisci libero vitae voluptate. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis distinctio, non nobis ex quia, dolorum vero
+        odit doloribus, accusamus nulla eaque. Numquam quasi esse reiciendis adipisci libero vitae voluptate.
+      </p>
+      <p>
+        <img class="float__right" src="https://picsum.photos/seed/5/100" alt="A Random Picture" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis distinctio, non nobis ex quia, dolorum
+        vero odit doloribus, accusamus nulla eaque. Numquam quasi esse reiciendis adipisci libero vitae voluptate. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Repellendus quis distinctio, non nobis ex quia, dolorum vero
+        odit doloribus, accusamus nulla eaque. Numquam quasi esse reiciendis adipisci libero vitae voluptate.
+      </p>
+    </section>
+  </body>
+</html>
